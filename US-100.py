@@ -28,6 +28,7 @@ try:
         ser.write(chr(0x50).encode())
         time.sleep(0.005)
         print("%f ℃" %(get_temp()))
+        time.sleep(1)
 
 except ValueError:
     print('获取信息超时')
